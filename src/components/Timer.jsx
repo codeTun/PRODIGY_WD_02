@@ -39,7 +39,7 @@ export default function Timer() {
             className="start bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded transition duration-300 ease-in-out"
             onClick={() => setTime(0)}
           >
-            Restart
+            Reset
           </button>
           <button
             className={`stop ${
@@ -54,7 +54,7 @@ export default function Timer() {
               setIsRunning(!isRunning);
             }}
           >
-            {isRunning ? "Stop" : "Resume"}
+            {isRunning ? "Stop" : "Start"}
           </button>
         </div>
       </div>
